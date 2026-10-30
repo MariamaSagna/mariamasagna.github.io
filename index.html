@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariama Sagna | IT Project Manager & Cybersecurity Professional</title>
+    <style>
+        :root {
+            --primary: #1e293b;
+            --secondary: #2563eb;
+            --accent: #3b82f6;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #0f172a 100%);
+            color: var(--white);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .badge {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.25rem;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 { font-size: 2.25rem; }
+        }
+
+        .about-text p {
+            margin-bottom: 1.25rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+            margin-bottom: 1.5rem;
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .skills-list {
+            list-style: none;
+        }
+
+        .skills-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.25rem;
+            position: relative;
+        }
+
+        .skills-list li::before {
+            content: "✓";
+            color: var(--secondary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: var(--primary);
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.87rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Mariama Sagna</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Mariama Sagna</h1>
+            <p>IT Project Manager & Cybersecurity Professional</p>
+            <div>
+                <span class="badge">PMP® Candidate</span>
+                <span class="badge">CompTIA CySA+</span>
+                <span class="badge">CompTIA Network+</span>
+                <span class="badge">CompTIA A+</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2 class="section-title">Professional Summary</h2>
+                <p>I am a final-semester Computer Science student at Southern New Hampshire University (SNHU) with a strong technical foundation built over two years of rigorous coursework and hands-on full-stack development experience.</p>
+                <p>With an extensive background in technical certifications, including CompTIA A+, Network+, and CySA+, I discovered a passion for IT project management. I excel at managing software development lifecycles from initiation to closure, bridging the gap between technical developer teams and high-level business stakeholders.</p>
+                <p>Having a hands-on technical baseline means that when I lead a project, I understand how the underlying software architecture works, enabling efficient issue resolution, highly secure system planning, and precise requirement translation.</p>
+            </div>
+            
+            <div class="about-sidebar">
+                <div class="card">
+                    <h3>Education</h3>
+                    <p><strong>B.S. Computer Science</strong><br>Southern New Hampshire University<br>Graduating This Semester</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background-color: #f1f5f9;">
+        <div class="section">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="about-grid">
+                <div class="card">
+                    <h3>Technical Domain Knowledge</h3>
+                    <ul class="skills-list">
+                        <li><strong>Cybersecurity:</strong> Securing network landscapes, posture assessment, and compliance architecture frameworks.</li>
+                        <li><strong>Full-Stack Development:</strong> Deep-diving into modern web stacks, including MEAN stack application engineering.</li>
+                        <li><strong>Database Management:</strong> Practical backend implementation utilizing structured relational databases and MongoDB from scratch.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Project Governance</h3>
+                    <ul class="skills-list">
+                        <li>Agile & Scrum Methodologies</li>
+                        <li>Cross-functional Team Leadership</li>
+                        <li>Technical Scope Translation</li>
+                        <li>SDLC Lifecycle Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Current Initiatives & Enhancements</h2>
+        <div class="card">
+            <h3>Full-Stack Client Management Application</h3>
+            <p style="margin-bottom: 1rem; color: var(--text-light);"><em>Primary Developer & Project Manager</em></p>
+            <p>Currently engineering a comprehensive personal business application tailored for personal training environments. This highly secure application provides client profile management, personalized fitness routine scheduling, and direct payment processing tracking mechanisms.</p>
+            <p style="margin-top: 0.5rem;">To demonstrate authentic database capability and architecture insight, the application relies on custom backend engineering using **MongoDB** rather than pre-packaged cloud abstraction toolsets.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mariama Sagna. All rights reserved. | ePortfolio Hosted via GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
